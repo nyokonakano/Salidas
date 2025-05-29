@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caja Fuerte</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div class="safe" onclick="openModal()">💋 Tocame </div>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <h2>Ponmela papi, Ponmela🔥</h2>
+      <input type="text" id="clave" placeholder="clave: si papi">
+      <br><br>
+      <button onclick="validarClave()">Ingresar</button>
+    </div>
+  </div>
+
+  <div class="modal" id="opciones">
+    <div class="modal-content">
+      <h2>Bienvenido Mi Dibujito</h2>
+      <p>¿Que te provoca hacer hoy?</p>
+      <div class="options">
+        <button onclick="confirmar('cine')">🏃Joder polis y safar</button>
+        <button onclick="confirmar('parque')">🏠 Ir a la casa de Ana a joderle la
+                                              vida un rato (si eres tu ana pon esta nomas)</button>
+        <button onclick="confirmar('playa')">⚰️ Dar de baja a Dina en la RENIEC</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="confirmation" id="confirmacion">
+    <div class="confirmation-content" id="confirmacionContenido"></div>
+    <button onclick="cerrarConfirmacion()">Cerrar</button>
+  </div>
+
+  <div class="countdown" id="destruccion">
+    <div class="modal-content">
+      <h2>Esta web se autodestruirá en</h2>
+      <h1 id="contador">5</h1>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
